@@ -1,0 +1,38 @@
+{
+  "name": "spd-reservation",
+  "version": "1.0.0",
+  "description": "SSPD Meeting Room Booking System - React + Express",
+  "scripts": {
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run build && serve -s frontend/build",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "cd frontend && npm test"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "concurrently": "^8.2.2",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/spd-reservation.git"
+  },
+  "keywords": [
+    "meeting-room",
+    "booking",
+    "react",
+    "express",
+    "google-sheets",
+    "realtime"
+  ],
+  "author": "SSPD Team",
+  "license": "MIT"
+}
