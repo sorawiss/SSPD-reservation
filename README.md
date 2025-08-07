@@ -2,6 +2,14 @@
 
 A modern web application for managing room reservations with real-time updates, built with React frontend and Node.js backend, integrated with Google Sheets for data storage.
 
+
+
+## 📸 Screenshots
+![Home Page](screenshots/1.png)
+![Statistic](screenshots/2.png)
+
+
+
 ## 🚀 Features
 
 - **Real-time Booking**: Live updates using Socket.io
